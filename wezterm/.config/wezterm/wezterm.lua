@@ -14,7 +14,7 @@ end)
 local config = wezterm.config_builder()
 
 local light_theme = "Catppuccin Latte"
--- local dark_theme = "tokyonight_night"
+-- local dark_theme = "tokyonight"
 local dark_theme = "Dracula (Official)"
 
 local appearance_themes = {
@@ -25,8 +25,37 @@ local appearance_themes = {
 local appearance = wezterm.gui.get_appearance()
 config.color_scheme = appearance_themes[appearance] or dark_theme
 
--- config.font = wezterm.font("Maple Mono NF")
-config.font = wezterm.font("Martian Mono NF")
+config.font = wezterm.font { family = "Martian Mono NF" }
+-- config.font = wezterm.font { family = "Maple Mono NF" }
+config.font_rules = {
+  {
+    intensity = 'Bold',
+    italic = true,
+    font = wezterm.font {
+      family = 'VictorMono Nerd Font',
+      weight = 'Bold',
+      style = 'Italic',
+    },
+  },
+  {
+    italic = true,
+    intensity = 'Half',
+    font = wezterm.font {
+      family = 'VictorMono Nerd Font',
+      weight = 'DemiBold',
+      style = 'Italic',
+    },
+  },
+  {
+    italic = true,
+    intensity = 'Normal',
+    font = wezterm.font {
+      family = 'VictorMono Nerd Font',
+      style = 'Italic',
+    },
+  },
+}
+
 config.font_size = 15.0
 config.window_decorations = "NONE"
 config.tab_bar_at_bottom = true

@@ -1,20 +1,18 @@
-# - run the code
-# - check dependencies
-# - run tests
-#
-# title: summary, imperative, start upper case, don't end with a period
-# no more than 50 chars. #### 50 chars is here:  #
+# TITLE: summary, imperative, start upper case, don't end with a period
+# fix | feat | build | chore | ci | docs | style | refactor | perf | test | revert
+# no more than 50 chars. #### 50 chars is    here:
 
-# blank line ===
-
-# body: explain *what* and *why* (not *how*).
-# wrap at 72 chars. ################################## which is here:  #
-
-# !!!mention issues!!!
+# === DONT FORGET BLANK LINE ===
+# BODY: explain *what* and *why* (not *how*).
+# wrap at 72 chars. ################################## which is    here:
+# === MENTION ISSUES ===
 
 # At the end: Include Co-authored-by for all contributors. 
 # Include at least one empty line before it. Format: 
 # Co-authored-by: name <user@users.noreply.github.com>
+#
+# Convectional commits:
+# https://www.conventionalcommits.org/
 #
 # How to Write a Git Commit Message:
 # https://chris.beams.io/posts/git-commit/
