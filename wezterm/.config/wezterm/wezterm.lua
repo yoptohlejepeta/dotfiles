@@ -14,8 +14,8 @@ end)
 local config = wezterm.config_builder()
 
 local light_theme = "Catppuccin Latte"
--- local dark_theme = "tokyonight"
-local dark_theme = "Dracula (Official)"
+local dark_theme = "Moonfly (Gogh)"
+-- local dark_theme = "Dracula (Official)"
 
 local appearance_themes = {
   Light = light_theme,
