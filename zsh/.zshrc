@@ -47,6 +47,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH=$PATH:$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/home/petka/.juliaup/bin
 export EDITOR=nvim
 . "$HOME/.cargo/env"

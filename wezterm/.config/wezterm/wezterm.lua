@@ -14,19 +14,15 @@ end)
 local config = wezterm.config_builder()
 
 local light_theme = "Catppuccin Latte"
-local dark_theme = "Moonfly (Gogh)"
--- local dark_theme = "Dracula (Official)"
 
 local appearance_themes = {
   Light = light_theme,
-  Dark = dark_theme,
 }
 
 local appearance = wezterm.gui.get_appearance()
 config.color_scheme = appearance_themes[appearance] or dark_theme
 
 config.font = wezterm.font { family = "Martian Mono NF" }
--- config.font = wezterm.font { family = "Maple Mono NF" }
 config.font_rules = {
   {
     intensity = 'Bold',
@@ -68,23 +64,6 @@ config.window_padding = {
   top = 0,
   bottom = 0,
 }
-local SOLID_LEFT_ARROW = wezterm.nerdfonts.pl_right_hard_divider
---
-local SOLID_RIGHT_ARROW = wezterm.nerdfonts.pl_left_hard_divider
--- config.tab_bar_style = {
---   active_tab_left = wezterm.format {
---     { Text = SOLID_LEFT_ARROW },
---   },
---   active_tab_right = wezterm.format {
---     { Text = SOLID_RIGHT_ARROW },
---   },
---   inactive_tab_left = wezterm.format {
---     { Text = SOLID_LEFT_ARROW },
---   },
---   inactive_tab_right = wezterm.format {
---     { Text = SOLID_RIGHT_ARROW },
---   },
--- }
 
 config.keys = {
   {
