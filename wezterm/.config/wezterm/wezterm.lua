@@ -46,7 +46,7 @@ config.font_rules = {
 	},
 }
 
-config.font_size = 15.0
+config.font_size = 13.0
 config.window_decorations = "NONE"
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
