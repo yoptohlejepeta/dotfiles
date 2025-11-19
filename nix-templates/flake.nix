@@ -3,7 +3,7 @@
 
   outputs = { self }: {
     templates = {
-      simple-packages = {
+      basic = {
         path = ./basic;
         description = "Simple universal package template";
       };
