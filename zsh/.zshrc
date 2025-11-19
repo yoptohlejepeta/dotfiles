@@ -2,19 +2,6 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000          
 SAVEHIST=10000         
 
-# [[ -x /usr/bin/lesspipe ]] && eval "$(SHELL=/bin/sh lesspipe)"
-
-# if [[ -z "${debian_chroot:-}" && -r /etc/debian_chroot ]]; then
-#     debian_chroot=$(cat /etc/debian_chroot)
-# fi
-
-# if [[ -x /usr/bin/dircolors ]]; then
-#     [[ -r ~/.dircolors ]] && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-#     alias ls='ls --color=auto'
-#     alias grep='grep --color=auto'
-#     alias fgrep='fgrep --color=auto'
-#     alias egrep='egrep --color=auto'
-# fi
 bindkey -v
 export MANPAGER='nvim +Man!'
 
@@ -76,3 +63,4 @@ export PATH
 # <<< juliaup initialize <<<
 
 [ -f "/home/petka/.ghcup/env" ] && . "/home/petka/.ghcup/env" # ghcup-env
+. "/home/petka/.deno/env"
