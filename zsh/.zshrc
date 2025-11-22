@@ -13,7 +13,20 @@ bindkey "^[[1;5D" backward-word
 precmd() {
     echo ""
 }
-PROMPT='%F{blue}%~%f '$'\n%F{green}%f '
+
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt PROMPT_SUBST
+
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' unstagedstr '%F{8}*%f'
+zstyle ':vcs_info:git:*' stagedstr '%F{8}+%f'
+zstyle ':vcs_info:git:*' formats '%F{8}%b%f%u%c'
+zstyle ':vcs_info:*' enable git
+
+PROMPT='%F{blue}%~%f '$'\n%F{green}>>%f '
+RPROMPT=' ${vcs_info_msg_0_}'
 
 # git aliases
 alias gst='git status --branch --short'
