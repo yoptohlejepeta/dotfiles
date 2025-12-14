@@ -1,5 +1,6 @@
 local wezterm = require("wezterm")
 local theme = require("lua/vague")
+local domains = require("domains")
 local mux = wezterm.mux
 
 wezterm.on("gui-attached", function(domain)
@@ -17,6 +18,7 @@ local config = wezterm.config_builder()
 config.colors = theme.colors()
 
 config.font = wezterm.font({ family = "Martian Mono NF" })
+-- config.font = wezterm.font({ family = "VictorMono Nerd Font", weight="Medium" })
 config.font_rules = {
 	{
 		intensity = "Bold",
@@ -46,7 +48,13 @@ config.font_rules = {
 	},
 }
 
-config.font_size = 13.0
+config.window_content_alignment = {
+  horizontal = 'Center',
+  vertical = 'Center',
+}
+
+config.font_size = 18.0
+config.tab_max_width = 30
 config.window_decorations = "NONE"
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
@@ -58,6 +66,8 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
+
+config.ssh_domains = domains
 
 config.keys = {
 	{
@@ -122,3 +132,4 @@ for i = 1, 9 do
 end
 
 return config
+

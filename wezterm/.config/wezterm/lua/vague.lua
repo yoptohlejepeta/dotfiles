@@ -23,7 +23,7 @@ function M.colors()
 			"#d8647e",
 			"#7fa563",
 			"#f3be7c",
-			"#6e94b2",
+			"#7e98e8",
 			"#bb9dbd",
 			"#aeaed1",
 			"#cdcdcd",
@@ -41,8 +41,8 @@ function M.colors()
 		tab_bar = {
 			background = "#141415",
 			active_tab = {
-				bg_color = "#252530",
-				fg_color = "#cdcdcd",
+				bg_color = "#7e98e8",
+				fg_color = "#333738",
 				intensity = "Normal",
 				underline = "None",
 				italic = false,
@@ -53,7 +53,7 @@ function M.colors()
 				fg_color = "#606079",
 				intensity = "Normal",
 				underline = "None",
-				italic = false,
+				italic = true,
 				strikethrough = false,
 			},
 			inactive_tab_hover = {
