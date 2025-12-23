@@ -25,7 +25,7 @@ zstyle ':vcs_info:git:*' stagedstr '%F{green}+%f'
 zstyle ':vcs_info:git:*' formats '%F{yellow}%b%f%u%c'
 zstyle ':vcs_info:*' enable git
 
-PROMPT='%F{blue}%~%f '$'\n%F{green} %f'
+PROMPT=' %F{blue}%~%f '$'\n%F{green} 󰘧 %f'
 RPROMPT='${vcs_info_msg_0_}'
 
 # git aliases
@@ -48,7 +48,6 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH=$PATH:$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
-export PATH=$PATH:/home/petka/.juliaup/bin
 export PATH=/home/petka/.nimble/bin:$PATH
 export EDITOR=nvim
 . "$HOME/.cargo/env"
@@ -67,6 +66,13 @@ y() {
 }
 
 
+
+
+[ -f "/home/petka/.ghcup/env" ] && . "/home/petka/.ghcup/env" # ghcup-env
+. "/home/petka/.deno/env"
+
+
+
 # >>> juliaup initialize >>>
 
 # !! Contents within this block are managed by juliaup !!
@@ -75,6 +81,3 @@ path=('/home/petka/.juliaup/bin' $path)
 export PATH
 
 # <<< juliaup initialize <<<
-
-[ -f "/home/petka/.ghcup/env" ] && . "/home/petka/.ghcup/env" # ghcup-env
-. "/home/petka/.deno/env"
