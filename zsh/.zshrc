@@ -25,17 +25,8 @@ zstyle ':vcs_info:git:*' stagedstr '%F{green}+%f'
 zstyle ':vcs_info:git:*' formats '%F{yellow}%b%f%u%c'
 zstyle ':vcs_info:*' enable git
 
-PROMPT=' %F{blue}%~%f '$'\n%F{green} 󰘧 %f'
+PROMPT='%F{blue}%~%f '$'\n%F{green}󰘧 %f'
 RPROMPT='${vcs_info_msg_0_}'
-
-# git aliases
-alias gst='git status --branch --short'
-alias ga='git add -A'
-alias gc='git commit'
-alias gp='git push'
-
-alias lg='lazygit'
-alias ld='lazydocker'
 
 alias vim='nvim'
 

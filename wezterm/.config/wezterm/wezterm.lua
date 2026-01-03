@@ -49,8 +49,8 @@ config.window_padding = {
   top = 0,
   bottom = 0,
 }
-
-config.ssh_domains = domains
+config.use_resize_increments = true
+-- config.ssh_domains = domains
 
 config.keys = {
   {

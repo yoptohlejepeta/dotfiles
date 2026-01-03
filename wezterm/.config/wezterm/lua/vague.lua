@@ -6,7 +6,7 @@ local M = {}
 function M.colors()
 	return {
 		foreground = "#cdcdcd",
-		background = "#141415",
+		background = "#1d1f21",
 
 		cursor_bg = "#cdcdcd",
 		cursor_fg = "#141415",
@@ -38,39 +38,39 @@ function M.colors()
 			"#bebeda",
 			"#d7d7d7",
 		},
-		tab_bar = {
-			background = "#141415",
-			active_tab = {
-				bg_color = "#7e98e8",
-				fg_color = "#333738",
-				intensity = "Normal",
-				underline = "None",
-				italic = false,
-				strikethrough = false,
-			},
-			inactive_tab = {
-				bg_color = "#141415",
-				fg_color = "#606079",
-				intensity = "Normal",
-				underline = "None",
-				italic = true,
-				strikethrough = false,
-			},
-			inactive_tab_hover = {
-				bg_color = "#252530",
-				fg_color = "#cdcdcd",
-				italic = false,
-			},
-			new_tab = {
-				bg_color = "#141415",
-				fg_color = "#6e94b2",
-			},
-			new_tab_hover = {
-				bg_color = "#252530",
-				fg_color = "#8ba9c1",
-			},
-			inactive_tab_edge = "#252530",
-		},
+		-- tab_bar = {
+		-- 	background = "#141415",
+		-- 	active_tab = {
+		-- 		bg_color = "#7e98e8",
+		-- 		fg_color = "#333738",
+		-- 		intensity = "Normal",
+		-- 		underline = "None",
+		-- 		italic = false,
+		-- 		strikethrough = false,
+		-- 	},
+		-- 	inactive_tab = {
+		-- 		bg_color = "#141415",
+		-- 		fg_color = "#606079",
+		-- 		intensity = "Normal",
+		-- 		underline = "None",
+		-- 		italic = true,
+		-- 		strikethrough = false,
+		-- 	},
+		-- 	inactive_tab_hover = {
+		-- 		bg_color = "#252530",
+		-- 		fg_color = "#cdcdcd",
+		-- 		italic = false,
+		-- 	},
+		-- 	new_tab = {
+		-- 		bg_color = "#141415",
+		-- 		fg_color = "#6e94b2",
+		-- 	},
+		-- 	new_tab_hover = {
+		-- 		bg_color = "#252530",
+		-- 		fg_color = "#8ba9c1",
+		-- 	},
+		-- 	inactive_tab_edge = "#252530",
+		-- },
 	}
 end
 
