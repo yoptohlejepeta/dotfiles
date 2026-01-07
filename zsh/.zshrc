@@ -60,7 +60,6 @@ y() {
 
 
 [ -f "/home/petka/.ghcup/env" ] && . "/home/petka/.ghcup/env" # ghcup-env
-. "/home/petka/.deno/env"
 
 
 
