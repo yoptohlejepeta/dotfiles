@@ -4,10 +4,7 @@ local theme = require("lua/vague")
 
 local config = wezterm.config_builder()
 
--- config.colors = theme.colors()
-config.colors = {
-	background = "#1d1f21",
-}
+config.colors = theme.colors()
 
 config.font = wezterm.font({ family = "Martian Mono NF" })
 config.font_rules = {
