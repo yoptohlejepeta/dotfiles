@@ -4,7 +4,8 @@ local theme = require("lua/vague")
 
 local config = wezterm.config_builder()
 
-config.colors = theme.colors()
+-- config.colors = theme.colors()
+config.color_scheme = 'Gruvbox dark, hard (base16)'
 
 config.font = wezterm.font({ family = "Martian Mono NF" })
 config.font_rules = {
