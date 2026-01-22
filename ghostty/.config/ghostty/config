@@ -1,0 +1,5 @@
+font-family = "MartianMono NF"
+font-family-italic = "VictorMono NF"
+background = "#242933"
+window-decoration = "none"
+mouse-hide-while-typing=true
