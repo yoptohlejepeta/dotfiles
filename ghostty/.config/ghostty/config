@@ -1,5 +1,5 @@
 font-family = "MartianMono NF"
 font-family-italic = "Monaspace Radon NF"
-background = "#1E222A"
+theme = Vague
 window-decoration = "none"
 mouse-hide-while-typing=true
