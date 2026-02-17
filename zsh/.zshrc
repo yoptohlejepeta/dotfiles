@@ -10,23 +10,9 @@ autoload -Uz compinit && compinit
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
-precmd() {
-    echo ""
-}
-
 autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt PROMPT_SUBST
 
-zstyle ':vcs_info:git:*' check-for-changes true
-zstyle ':vcs_info:git:*' unstagedstr '%F{red}*%f'
-zstyle ':vcs_info:git:*' stagedstr '%F{green}+%f'
-zstyle ':vcs_info:git:*' formats '%F{yellow}%b%f%u%c'
-zstyle ':vcs_info:*' enable git
-
-PROMPT='%F{blue}%~%f '$'\n%F{green}󰘧 %f'
-RPROMPT='${vcs_info_msg_0_}'
+eval "$(starship init zsh)"
 
 alias vim='nvim'
 
@@ -57,11 +43,7 @@ y() {
 }
 
 
-
-
 [ -f "/home/petka/.ghcup/env" ] && . "/home/petka/.ghcup/env" # ghcup-env
-
-
 
 # >>> juliaup initialize >>>
 
